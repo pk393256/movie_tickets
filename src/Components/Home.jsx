@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+
 import { useNavigate } from 'react-router-dom';
 
 
@@ -22,7 +22,7 @@ export const Home = () => {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '15px' }}>
             {movies.map((e) => (
                 <div key={e.id} style={{ border: '5px solid black' }}>
-                    <p>{e.original_title}</p>
+                    <h1>{e.original_title}</h1>
                     <p>{'release_date-'}{e.release_date}</p>
                     <img style={{ width: '200px' }} src={e.poster_path} />
                     <h6>{'original_language-'}{e.original_language}</h6>
