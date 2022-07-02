@@ -38,7 +38,7 @@ export const Bookings=()=> {
   return (
     <div style={{marginLeft:'35%',marginTop:'5%'}}>
         {
-            bookings?.map((movie, e)=>{
+            bookings.map((movie, e)=>{
                 return <div key={e}>
                     <table style={{border:"1px solid blue"}}>
                         <thead >
